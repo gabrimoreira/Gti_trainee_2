@@ -1,0 +1,117 @@
+html {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+body {
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+}
+.container {
+  max-width: 1920px;
+  width: 100%;
+}
+
+header {
+  position: relative;
+  top: 0;
+  height: auto;
+  width: 100%;
+  left: 0;
+}
+nav {
+  position: fixed;
+  top: 0;
+  height: 80px;
+  width: 100%;
+  z-index: 1;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+}
+nav::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+.navigation {
+  max-width: auto;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+#titulo {
+  font-family: Trattatello, fantasy;
+  text-decoration: none;
+  color: black;
+  float: left;
+  line-height: 88px;
+  margin: 0 20px;
+}
+#logo {
+  width: 30px;
+  height: 30px;
+  margin-top: 25px;
+  margin-left: 25px;
+  float: left;
+}
+
+.navigation ul {
+  float: right;
+  height: 100px;
+  line-height: 90px;
+  margin: 0;
+}
+.navigation li {
+  list-style: none;
+  float: right;
+  margin: 0 15px;
+}
+
+.navigation li a {
+  text-decoration: none;
+  color: #666;
+}
+
+#main_banner {
+  background: url("img/mario-1558068_1920.jpg");
+  background-size: cover;
+  background-position: 0 20%;
+  position: relative;
+}
+
+#inf_buttom {
+  position: relative;
+  width: 50%;
+  margin-left: 150px;
+  margin-right: auto;
+  padding-top: 20em;
+  padding-bottom: 20em;
+  text-align: center;
+}
+
+#inf_buttom p {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 25px;
+  font-family: sans-serif;
+  color: white;
+}
+#inf_buttom button {
+  background-color: darkblue; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 8px;
+}
