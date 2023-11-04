@@ -44,8 +44,6 @@ nav::after {
 .navigation {
   max-width: auto;
   position: relative;
-  margin-left: auto;
-  margin-right: auto;
 }
 #titulo {
   font-family: Trattatello, fantasy;
@@ -53,7 +51,7 @@ nav::after {
   color: black;
   float: left;
   line-height: 88px;
-  margin: 0 20px;
+  margin: 0 0;
 }
 #logo {
   width: 30px;
@@ -67,7 +65,7 @@ nav::after {
   float: right;
   height: 100px;
   line-height: 90px;
-  margin: auto;
+  margin: 0;
 }
 .navigation li {
   list-style: none;
@@ -113,7 +111,7 @@ button {
   background-color: darkblue; /* Green */
   border: none;
   color: white;
-  padding: 20px 20px;
+  padding: 15px 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -166,8 +164,6 @@ button {
   margin-right: auto;
   padding-top: 20em;
   padding-bottom: 20em;
-  padding-left: 20em;
-
   font-family: fantasy;
 }
 
@@ -180,7 +176,7 @@ button {
 .trabalho {
   background-color: #f0f0f0;
   text-align: center;
-  padding: 60px;
+  padding: 0;
 }
 
 .trabalho ul {
@@ -190,7 +186,8 @@ button {
 
 .trabalho li {
   display: inline-block;
-  margin: 15px 15px;
+  margin: auto;
+  margin-left: 0;
   text-align: center;
 }
 
@@ -212,12 +209,12 @@ button {
 #youtube {
   position: relative;
   background-color: #f0f0f0;
-  padding: 80px;
+  padding: 15px 15px;
   text-align: center;
 }
 #youtube iframe {
-  width: 80%;
-  height: 750px;
+  width: 100%;
+  height: 300px;
 }
 .parceiros {
   background-color: #f0f0f0;
@@ -289,7 +286,8 @@ button {
     margin-right: auto;
     padding-top: 20em;
     padding-bottom: 20em;
-    padding-left: 8em;
+    margin-left: auto;
+    text-align: center;
   }
   #main_banner {
     background-position: 800px 20%;
@@ -299,13 +297,48 @@ button {
     flex-direction: column;
     align-items: center;
   }
+  .trabalho h1 {
+    font-size: 20px;
+    margin-left: 50px;
+  }
   .trabalho img {
     margin-left: 0;
     padding-left: 0;
+    width: 60px;
+    height: 60px;
+    align-items: center;
   }
   .trabalho button {
     text-align: center;
     padding: auto;
-    margin: auto;
+    margin-left: 40px;
+  }
+  #inf_buttom {
+    margin-left: auto;
+  }
+
+  .parceiros img {
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-width: 490px) {
+  .navigation ul {
+    float: right;
+    height: 100px;
+    line-height: 90px;
+    margin: 0;
+  }
+  .navigation li a {
+    font-size: 8px;
+    padding: 0 0px;
+  }
+  .parceiros img {
+    width: 20px;
+    height: 20px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
