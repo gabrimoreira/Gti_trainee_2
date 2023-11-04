@@ -229,6 +229,6 @@ button {
   .navigation li {
     list-style: none;
     float: right;
-    margin: 0 15px;
+    margin: 0 5px;
   }
 }
