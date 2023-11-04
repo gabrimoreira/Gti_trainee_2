@@ -16,7 +16,6 @@ p {
 }
 
 .container {
-  max-width: 1920px;
   width: 100%;
 }
 
@@ -87,7 +86,7 @@ nav::after {
   background-size: cover;
   background-position: 0 20%;
   position: relative;
-  max-width: auto;
+
   width: 100%;
 }
 
@@ -105,6 +104,7 @@ nav::after {
 #inf_buttom p {
   margin-top: 30px;
   margin-bottom: 30px;
+  margin-left: 0;
   font-size: 25px;
   font-family: sans-serif;
   color: white;
@@ -138,8 +138,8 @@ button {
 }
 
 .servicos img {
-  width: 250px;
-  height: 250px;
+  width: 180px;
+  height: 180px;
   margin-left: auto;
   margin-right: auto;
   padding: 20px;
@@ -155,27 +155,30 @@ button {
   background-size: cover;
   background-position: 0 20%;
   position: relative;
-  width: 100%;
 }
 
 #inf {
   position: relative;
-  width: 50%;
-  margin-left: 150px;
+  margin-left: auto;
   margin-right: auto;
   padding-top: 20em;
   padding-bottom: 20em;
-  text-align: center;
+  padding-left: 20em;
+
   font-family: fantasy;
 }
 #inf h1 {
   color: white;
   text-decoration: none;
   font-family: "Courier New", Courier, monospace;
+
+  padding: auto;
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
 #inf p {
-  margin: auto;
+  margin: 0;
   font-size: 25px;
   font-family: sans-serif;
   color: white;
@@ -193,16 +196,16 @@ button {
 
 .trabalho li {
   display: inline-block;
-  margin: 0 50px;
+  margin: 0 40px;
   text-align: center;
 }
 
 .trabalho img {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   margin-left: auto;
   margin-right: auto;
-  padding: 20px;
+  padding: 15px;
 }
 .trabalho a {
   text-decoration: none;
