@@ -47,6 +47,7 @@ nav::after {
   position: relative;
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
 }
 #titulo {
   font-family: Trattatello, fantasy;
@@ -124,7 +125,6 @@ button {
   background-color: #f0f0f0;
   padding: 80px;
   text-align: center;
-  width: 100%;
 }
 
 .servicos ul {
@@ -184,7 +184,6 @@ button {
   background-color: #f0f0f0;
   padding: 80px;
   text-align: center;
-  width: 100%;
 }
 
 .trabalho ul {
@@ -217,7 +216,6 @@ button {
   background-color: #f0f0f0;
   padding: 80px;
   text-align: center;
-  width: 100%;
 }
 #youtube iframe {
   width: 80%;
