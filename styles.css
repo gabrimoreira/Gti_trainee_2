@@ -79,6 +79,7 @@ nav::after {
 .navigation li a {
   text-decoration: none;
   color: #666;
+  font-size: 15px;
 }
 
 #main_banner {
@@ -255,5 +256,13 @@ button {
     list-style: none;
     float: right;
     margin: 0 5px;
+  }
+  .servicos img {
+    width: 120px;
+    height: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    border-radius: 50%;
   }
 }
