@@ -46,7 +46,6 @@ nav::after {
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
 }
 #titulo {
   font-family: Trattatello, fantasy;
@@ -68,7 +67,7 @@ nav::after {
   float: right;
   height: 100px;
   line-height: 90px;
-  margin: 0;
+  margin: auto;
 }
 .navigation li {
   list-style: none;
@@ -124,7 +123,7 @@ button {
 }
 .servicos {
   background-color: #f0f0f0;
-  padding: 80px;
+  padding: 10px;
   text-align: center;
 }
 
@@ -139,8 +138,8 @@ button {
 }
 
 .servicos img {
-  width: 120px;
-  height: 120px;
+  width: 150px;
+  height: 150px;
   margin-left: auto;
   margin-right: auto;
   padding: 20px;
@@ -157,13 +156,13 @@ button {
 #slider {
   background: url("img/minecraft-1106261_1920.png");
   background-size: cover;
-  background-position: 0 20%;
+  background-position: 0 110%;
   position: relative;
 }
 
 #inf {
   position: relative;
-  margin-left: auto;
+  margin-left: 0;
   margin-right: auto;
   padding-top: 20em;
   padding-bottom: 20em;
@@ -171,19 +170,10 @@ button {
 
   font-family: fantasy;
 }
-#inf h1 {
-  color: white;
-  text-decoration: none;
-  font-family: "Courier New", Courier, monospace;
-
-  padding: auto;
-  margin-bottom: 0;
-  margin-top: 0;
-}
 
 #inf p {
   margin: 0;
-  font-size: 25px;
+  font-size: 20px;
   font-family: sans-serif;
   color: white;
 }
@@ -207,8 +197,6 @@ button {
 .trabalho img {
   width: 80px;
   height: 80px;
-  margin-left: auto;
-  margin-right: auto;
 }
 .trabalho a {
   text-decoration: none;
@@ -251,22 +239,73 @@ button {
   margin-left: auto;
   margin-right: auto;
 }
-@media screen and (max-width: 768px) {
-  .navigation li {
-    list-style: none;
-    float: right;
-    margin: 0 5px;
+@media (max-width: 768px) {
+  .servicos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
+
   .servicos img {
-    width: 120px;
-    height: 120px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 5px;
+    width: 100px;
+    height: 100px;
+    margin-left: 15px;
+    margin-right: 15px;
     border-radius: 50%;
+    max-width: 100%;
+    margin: 10px 0;
   }
   .servicos li {
-    display: inline-block;
+    margin: 0 90px;
+  }
+  .servicos h1 {
+    font-size: 15px;
+  }
+  .servicos p {
+    font-size: 10px;
+  }
+  .navigation li a {
+    font-size: 10px;
+  }
+  #inf p {
+    font-size: 15px;
+  }
+  #logo {
+    width: 20px;
+    height: 20px;
+    margin-top: 32px;
+  }
+  #titulo {
+    font-size: 10px;
+    line-height: 88px;
     margin: 0 10px;
+  }
+  #inf_buttom p {
+    text-align: center;
+    float: left;
+    font-size: 20px;
+  }
+  #inf {
+    margin-right: auto;
+    padding-top: 20em;
+    padding-bottom: 20em;
+    padding-left: 8em;
+  }
+  #main_banner {
+    background-position: 800px 20%;
+  }
+  .trabalho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .trabalho img {
+    margin-left: 0;
+    padding-left: 0;
+  }
+  .trabalho button {
+    text-align: center;
+    padding: auto;
+    margin: auto;
   }
 }
