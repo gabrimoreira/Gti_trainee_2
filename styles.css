@@ -113,12 +113,12 @@ button {
   background-color: darkblue; /* Green */
   border: none;
   color: white;
-  padding: 20px 32px;
+  padding: 20px 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  border-radius: 32px;
+  border-radius: 16px;
   margin-top: 35px;
 }
 .servicos {
@@ -138,18 +138,21 @@ button {
 }
 
 .servicos img {
-  width: 180px;
-  height: 180px;
+  width: 120px;
+  height: 120px;
   margin-left: auto;
   margin-right: auto;
   padding: 20px;
   border-radius: 50%;
 }
-.servicos a {
-  text-decoration: none;
-  color: #0077b6;
-  margin: 110px;
+
+.servicos h1 {
+  font-size: 20px;
 }
+.servicos p {
+  font-size: 15px;
+}
+
 #slider {
   background: url("img/minecraft-1106261_1920.png");
   background-size: cover;
@@ -185,8 +188,8 @@ button {
 }
 .trabalho {
   background-color: #f0f0f0;
-  padding: 80px;
   text-align: center;
+  padding: 60px;
 }
 
 .trabalho ul {
@@ -196,7 +199,7 @@ button {
 
 .trabalho li {
   display: inline-block;
-  margin: 0 40px;
+  margin: 15px 15px;
   text-align: center;
 }
 
@@ -205,13 +208,16 @@ button {
   height: 80px;
   margin-left: auto;
   margin-right: auto;
-  padding: 15px;
 }
 .trabalho a {
   text-decoration: none;
   color: black;
-  margin: 65px;
+  margin: auto;
   padding: auto;
+  font-size: 5px;
+}
+#trabalho_img p {
+  font-size: 12px;
 }
 
 #youtube {
@@ -224,7 +230,26 @@ button {
   width: 80%;
   height: 750px;
 }
-
+.parceiros {
+  background-color: #f0f0f0;
+  text-align: center;
+  padding: 60px;
+}
+.parceiros ul {
+  list-style: none;
+  padding: auto;
+}
+.parceiros li {
+  display: inline-block;
+  margin: 0px 20px;
+  text-align: center;
+}
+.parceiros img {
+  width: 80px;
+  height: 80px;
+  margin-left: auto;
+  margin-right: auto;
+}
 @media screen and (max-width: 768px) {
   .navigation li {
     list-style: none;
