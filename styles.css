@@ -5,6 +5,7 @@ html {
 
 body {
   margin: 0;
+  background-color: #fff;
 }
 h1,
 h2,
@@ -59,6 +60,7 @@ nav::after {
   margin-top: 25px;
   margin-left: 25px;
   float: left;
+  margin-right: 15px;
 }
 
 .navigation ul {
@@ -108,7 +110,7 @@ nav::after {
   color: white;
 }
 button {
-  background-color: darkblue; /* Green */
+  background-color: darkblue;
   border: none;
   color: white;
   padding: 15px 20px;
@@ -238,6 +240,98 @@ button {
   margin-left: auto;
   margin-right: auto;
 }
+.carrossel {
+  background-color: #f0f0f0;
+  text-align: center;
+  padding: 0;
+}
+.slider2 {
+  background-color: #f0f0f0;
+  display: block;
+  height: 500px;
+  margin-left: 0;
+  margin-bottom: 40px;
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slider2 li {
+  display: inline-block;
+  list-style: none;
+  position: absolute;
+  text-align: center;
+}
+
+.slider2 img {
+  margin: auto;
+  height: 500px;
+  width: 100%;
+}
+.slider2 input {
+  display: none;
+}
+.slider2 label {
+  background-color: black;
+  bottom: 10px;
+  cursor: pointer;
+  display: block;
+  height: 10px;
+  position: absolute;
+  width: 10px;
+  z-index: 10;
+}
+
+.slider2 li:nth-child(1) label {
+  left: 10px;
+}
+
+.slider2 li:nth-child(2) label {
+  left: 40px;
+}
+
+.slider2 li:nth-child(3) label {
+  left: 70px;
+}
+.slider2 img {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.slider2 li input:checked ~ img {
+  opacity: 1;
+  visibility: visible;
+  z-index: 10;
+}
+.rodape {
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 70px;
+  margin-top: 20px;
+}
+
+.rodape ul {
+  list-style: none;
+  padding: 0;
+}
+
+.rodape li {
+  display: inline;
+  margin: 5px;
+}
+
+.rodape img {
+  width: 30px;
+  height: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px;
+  border-radius: 50%;
+}
+
 @media (max-width: 768px) {
   .servicos {
     display: flex;
@@ -325,6 +419,16 @@ button {
     height: 40px;
     margin-left: auto;
     margin-right: auto;
+  }
+  .slider2 img {
+    margin: auto;
+    height: 300px;
+    width: 100%;
+  }
+  .slider2 label {
+    height: 6px;
+
+    width: 6px;
   }
 }
 @media (max-width: 490px) {
