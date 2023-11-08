@@ -53,6 +53,10 @@ nav::after {
   margin: 0 0;
   padding: 0;
 }
+/*adicionando ids para fazer o link com a navbar*/
+#nav_games{}
+#nav_proposito{}
+#nav_feedback{}
 #logo {
   width: 30px;
   height: 30px;
