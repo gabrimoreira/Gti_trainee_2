@@ -13,7 +13,26 @@ h5,
 p {
   margin: 0;
 }
-
+.botao-whatsapp {
+  position: fixed;
+  bottom: 5vh; 
+  right: 5vh; 
+  background-color: #25d366; 
+  color: #fff; 
+  padding: 10px 10px; 
+  border-radius: 50%; 
+  cursor: pointer;
+  z-index: 1;
+  box-shadow: 0 5px  15px rgba(18, 10, 10, 0.297); 
+}
+.botao-whatsapp:hover{
+  transition: 0.3s all;
+  transform: scale(1.2);
+}
+.botao-whatsapp img{
+  height: 40px;
+  width: 40px;
+}
 .container {
   width: 100%;
 }
@@ -336,6 +355,7 @@ button {
   padding: 15px;
   border-radius: 50%;
 }
+
 
 @media (max-width: 768px) {
   .servicos {
