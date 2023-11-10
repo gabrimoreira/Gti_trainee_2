@@ -1,9 +1,11 @@
+
 html {
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 body {
   margin: 0;
   background-color: #fff;
+
 }
 h1,
 h2,
@@ -23,11 +25,13 @@ p {
   border-radius: 50%; 
   cursor: pointer;
   z-index: 1;
-  box-shadow: 0 5px  15px rgba(18, 10, 10, 0.297); 
+  box-shadow: 0 5px  15px rgba(18, 10, 10, 0.297);
+
 }
 .botao-whatsapp:hover{
   transition: 0.3s all;
   transform: scale(1.2);
+
 }
 .botao-whatsapp img{
   height: 40px;
@@ -35,6 +39,7 @@ p {
 }
 .container {
   width: 100%;
+
 }
 
 header {
@@ -103,7 +108,7 @@ nav::after {
   color: #666;
   font-size: 15px;
 }
-
+/*
 #main_banner {
   background: url("img/mario-1558068_1920.jpg");
   background-size: cover;
@@ -132,6 +137,80 @@ nav::after {
   font-family:Georgia, 'Times New Roman', Times, serif;
   color: white;
 }
+*/
+
+#main-slider{
+ width: 100%;
+}
+.slide {
+  flex: 0 0 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+
+.slide img{
+  width: 100%;
+  height: 100vh;
+  z-index: 0;
+}
+#slide-1{
+
+}
+#slide-2{
+  display: none;
+}
+#slide-3{
+  display: none;
+}
+#prevBtn{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  left: 5vh;
+  top: 50vh;
+  z-index: 0;
+  position: absolute;
+  width: 60px; 
+  height: 60px;
+  cursor: pointer;
+  opacity: 0.5;
+  background-color: #666;
+  transition: transform 0.2s linear, opacity 0.1s linear;
+}
+#prevBtn:hover{
+  transform: scale(1.2);
+  opacity: 0.6;
+}
+
+#prevBtn img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scaleX(-1);
+}
+#nextBtn{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  right: 5vh;
+  top: 50vh;
+  z-index: 0;
+  position: absolute;
+  width: 60px; 
+  height: 60px;
+  opacity: 0.5;
+  cursor: pointer;
+  background-color: #666;
+  transition: transform 0.2s linear,opacity 0.1s linear;
+}
+#nextBtn:hover{
+  transform: scale(1.2);
+  opacity: 0.6;
+}
+#nextBtn img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
 button {
   background-color: darkblue;
   border: none;
