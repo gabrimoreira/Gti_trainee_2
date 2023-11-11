@@ -1,15 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html >
 
 <head>
     <title>gamestation</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 </head>
 
 <body>
+
+    <button class="botao-whatsapp" >
+        <!--Colocar o número de telefone após wa.me/-->
+        <a href="https://wa.me/" target="_blank">
+            <img src="img/whatsapp.png" alt="WhatsApp">
+        </a>
+    </button>
     <div class="container">
         <header>
             <nav>
@@ -17,26 +23,44 @@
                     <img id="logo" src="img/icon_controle.png" alt="gamestation">
                     <a id="titulo" href="/">Gamestation</a>
                     <ul>
-                        <li><a href="#">Games</a></li>
-                        <li><a href="#">Gaming Making</a></li>
-                        <li><a href="#">Workspaces</a></li>
-
+                        <li><a href="#nav_games">Games</a></li>
+                        <li><a href="#nav_feedback">Feedback</a></li>
+                        <li><a href="#slider">Propósito</a></li>
+                        <li><a href="#nav_como">Como</a></li>
+                        <li><a href="#">Inicio</a></li>
                     </ul>
 
 
                 </div>
             </nav>
+            <!--
             <div id="main_banner">
                 <div id="inf_buttom">
                     <p>Desenvolvendo jogos com amor a 30 anos</p>
                     <p>Estamos agora revolucionando a maneira de fazer jogos</p>
                     <button>Saiba mais</button>
                 </div>
+            -->
+            <div id ="main-slider">
+                <div class="slide" id = "slide-1">
+                    <img src="img/mario-1558068_1920.jpg" alt="">
+                </div>
+                <div class="slide" id="slide-2">
+                    <img src="img/banner_jogando.jpg" alt="">
+                </div>
+                <div class="slide" id="slide-3">
+                    <img src="img/banner_zelda.jpg" alt="">
+                </div>
+
+            </div>
+            <button id="prevBtn"> <img src="img/arrow-point-to-right.png" alt=""></button>
+            <button id="nextBtn"><img src="img/arrow-point-to-right.png" alt=""></button>
+            
         </header>
-        <div class="servicos">
+        <div class="servicos" >
             <ul>
                 <li>
-                    <div class="trabalho_img"><img src="img/futebolgamehtml.jpg" alt="jogo 1">
+                    <div class="trabalho_img" id="nav_games"><img src="img/futebolgamehtml.jpg" alt="jogo 1">
                         <h1>Station FC</h1>
                         <p>Jogo de futebol mais aclamado</p>
                     </div>
@@ -53,10 +77,22 @@
                         <p>Jogo de corrida mais amado pelos fãs</p>
                     </div>
                 </li>
+                <li>
+                    <div class="trabalho_img"><img src="img/fantasia.jpg" alt="jogo 3">
+                        <h1>Station Fantasy</h1>
+                        <p>Jogo de fantasia mais amado</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="trabalho_img"><img src="img/space.jpg" alt="jogo 3">
+                        <h1>Space Station</h1>
+                        <p>Jogo de simulação no espaço mais amado</p>
+                    </div>
+                </li>
             </ul>
 
         </div>
-        <div id="slider">
+        <div id="slider" >
             <div id="inf">
                 <p>Desenvolvimentos de jogos <br /> com base em atividades conciliadoras <br /><br /></p>
                 <p><br />Gamestation é a maior desenvolvedora de jogos que <br /> pensa em conciliar meio ambiente
@@ -67,7 +103,7 @@
                 </p>
             </div>
         </div>
-        <div class="trabalho">
+        <div class="trabalho" id="nav_como">
             <h1>Como trabalhamos</h1>
             <ul>
 
@@ -114,7 +150,7 @@
             </ul>
 
         </div>
-        <div class="carrosel">
+        <div class="carrosel" id="nav_feedback">
             <ul class="slider2">
                 <li>
                     <input type="radio" id="slide1" name="slide" checked>
@@ -138,7 +174,7 @@
             <ul>
                 <li><img src="img/insta.jpg" alt="instaguam"></li>
                 <li><img src="img/face.jpg" alt="facebook"></li>
-                <li><img src="img/twitter.jfif" alt="twitter"></li>
+                <li><img src="img/twitter.jpg" alt="twitter"></li>
                 <li><img src="img/pint.jpg" alt="pinterest"></li>
                 <li><img src="img/linke.jpg" alt="linkedin"></li>
                 <li><img src="img/yt.jpg" alt="youtube"></li>
@@ -149,6 +185,7 @@
             <p>&copy; 2023 Minha Empresa. Todos os direitos reservados.</p>
 
         </div>
+<script src="script.js"></script>
 </body>
 
 
